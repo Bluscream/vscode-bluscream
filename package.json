@@ -1,0 +1,62 @@
+{
+  "name": "copy-relative-path-enhanced",
+  "displayName": "Copy Relative Path Enhanced",
+  "description": "Copy relative paths with dot prefix and trailing slashes for folders",
+  "version": "1.0.0",
+  "publisher": "Bluscream",
+  "author": {
+    "name": "Bluscream"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "copy",
+    "path",
+    "relative",
+    "clipboard",
+    "context menu"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "copyRelativePathEnhanced.copyPath",
+        "title": "Copy Relative Path"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "copyRelativePathEnhanced.copyPath",
+          "group": "6_copypath@10"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.80.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.50.0",
+    "typescript": "^5.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bluscream/copy-relative-path-enhanced.git"
+  },
+  "license": "MIT",
+  "icon": "icon.png"
+}
