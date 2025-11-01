@@ -3,10 +3,10 @@ import * as path from 'path';
 import * as fs from 'fs';
 
 export function activate(context: vscode.ExtensionContext) {
-    console.log('Copy Relative Path Enhanced is now active');
+    console.log('Copy Relative Path (new) is now active');
 
     let disposable = vscode.commands.registerCommand(
-        'copyRelativePathEnhanced.copyPath',
+        'copyRelativePathnew.copyPath',
         async (uri: vscode.Uri, uris: vscode.Uri[]) => {
             try {
                 // Handle multiple selections

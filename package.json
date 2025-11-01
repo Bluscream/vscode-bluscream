@@ -1,12 +1,20 @@
 {
-  "name": "copy-relative-path-enhanced",
-  "displayName": "Copy Relative Path Enhanced",
+  "name": "vscode-copy-relative-path-new",
+  "displayName": "Copy Relative Path new",
   "description": "Copy relative paths with dot prefix and trailing slashes for folders",
   "version": "1.0.0",
   "publisher": "Bluscream",
-  "author": {
-    "name": "Bluscream"
-  },
+  "authors": [
+    {
+      "name": "Bluscream",
+      "email": "bluscream@gmail.com",
+      "url": "https://github.com/Bluscream"
+    },
+    {
+      "name": "CursorAI",
+      "url": "https://github.com/Cursor.AI"
+    }
+  ],
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -25,14 +33,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "copyRelativePathEnhanced.copyPath",
+        "command": "copyRelativePathnew.copyPath",
         "title": "Copy Relative Path (new)"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "copyRelativePathEnhanced.copyPath",
+          "command": "copyRelativePathnew.copyPath",
           "group": "6_copypath@10"
         }
       ]
@@ -55,7 +63,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Bluscream/copy-relative-path-enhanced.git"
+    "url": "https://github.com/Bluscream/vscode-copy-relative-path-new.git"
   },
   "license": "MIT",
   "icon": "icon.png"
