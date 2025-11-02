@@ -2,7 +2,7 @@
   "name": "vscode-bluscream",
   "displayName": "Bluscream's VS Code Extensions",
   "description": "Copy relative paths with dot prefix and trailing slashes for folders",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "Bluscream",
   "authors": [
     {
@@ -35,6 +35,10 @@
       {
         "command": "bluscream.copyRelativePath",
         "title": "Copy Relative Path (new)"
+      },
+      {
+        "command": "bluscream.openInNewWindow",
+        "title": "Open in New Window"
       }
     ],
     "menus": {
@@ -42,6 +46,10 @@
         {
           "command": "bluscream.copyRelativePath",
           "group": "6_copypath@10"
+        },
+        {
+          "command": "bluscream.openInNewWindow",
+          "group": "navigation@100"
         }
       ],
       "editor/title/context": [
