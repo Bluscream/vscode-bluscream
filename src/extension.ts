@@ -3,10 +3,10 @@ import * as path from 'path';
 import * as fs from 'fs';
 
 export function activate(context: vscode.ExtensionContext) {
-    console.log('Copy Relative Path (new) is now active');
+    console.log('Bluscream VS Code Extensions is now active');
 
     let disposable = vscode.commands.registerCommand(
-        'copyRelativePathnew.copyPath',
+        'bluscream.copyRelativePath',
         async (uri: vscode.Uri, uris: vscode.Uri[]) => {
             try {
                 // Handle multiple selections
